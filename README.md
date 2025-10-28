@@ -24,7 +24,7 @@ Follow these steps to install and configure the tool on your machine.
 Open your terminal and clone this repository (`AuthTerminal`) to your desired folder:
 
 ```bash
-git clone [https://github.com/littleg0d/AuthTerminal.git](https://github.com/littleg0d/AuthTerminal.git)
+git clone https://github.com/littleg0d/AuthTerminal.git
 cd AuthTerminal
 ```
 
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 
-🚀 Usage
+# 🚀 Usage
 
 
 ### 🗝️ 1. First-Time Setup (Create Encrypted Vault)
