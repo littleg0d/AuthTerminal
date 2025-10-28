@@ -26,33 +26,41 @@ Open your terminal and clone this repository (`AuthTerminal`) to your desired fo
 ```bash
 git clone [https://github.com/littleg0d/AuthTerminal.git](https://github.com/littleg0d/AuthTerminal.git)
 cd AuthTerminal
+```
 
 
 
-2. Install Dependencies
+
+### 2. Install Dependencies
 
 Dependencies are already listed in requirements.txt.
 Install them with:
-
+```bash
 pip install -r requirements.txt
+```
 
-
-You’re now ready to use AuthTerminal ✅
 
 🚀 Usage
 
-Depending on your system, you may need to use python3 auth.py or py auth.py instead of python auth.py.
 
-🗝️ 1. First-Time Setup (Create Encrypted Vault)
+### 🗝️ 1. First-Time Setup (Create Encrypted Vault)
 
 Before viewing any codes, you must import your accounts to create your encrypted vault.
 
+```bash
 Create a .txt file (e.g. my_keys.txt) with your otpauth:// URIs, one per line.
+```
+
+> ⚠️ **Important:** This command only works with plain `.txt` or `json` files containing `otpauth://` URIs.  
+> It **cannot import or decrypt already encrypted vault files**.  
+> To view or modify an existing vault, just run `python auth.py` instead.
+
+
 
 Run the import command:
-
+```bash
 python auth.py importar my_keys.txt
-
+```
 
 The script will:
 
@@ -60,12 +68,12 @@ Ask you to create a master password.
 
 Import your accounts and encrypt them into a new file secrets.json.
 
-👀 2. View Your 2FA Codes
+### 👀 2. View Your 2FA Codes
 
 Once you have imported your secrets, view your codes with:
-
+```bash
 python auth.py
-
+```
 
 You’ll be prompted for your master password.
 
@@ -73,12 +81,12 @@ The screen will show a real-time list of your codes with a refreshing timer bar.
 
 Press Ctrl + C to exit the viewer.
 
-➕ 3. Import More Accounts
+### ➕ 3. Import More Accounts
 
 To add new accounts later:
-
+```bash
 python auth.py importar another_file.txt
-
+```
 
 The tool unlocks your vault using your master password.
 
@@ -86,12 +94,12 @@ New secrets are added; duplicates are automatically ignored.
 
 The vault is re-encrypted and saved.
 
-🔄 4. Change Your Master Password
+### 🔄 4. Change Your Master Password
 
 If you want to change your master password:
-
+```bash
 python auth.py cambiarpass
-
+```
 
 You’ll be prompted to:
 
